@@ -11,6 +11,7 @@ class SearchBar extends Component {
         return (
             <div className="search-bar">
                 <input
+                    className="form-control"
                     placeholder="Type to search video"
                     onChange={event => this.onInputChange(event.target.value)}
                 />

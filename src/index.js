@@ -6,6 +6,7 @@ import SearchBar from './components/search_bar';
 import VideoList from './components/video_list';
 import VideoDetail from './components/video_detail';
 
+// Youtube API Key
 const API_KEY = 'AIzaSyCApEFabUKlBiGE2RjuUEcZmlSE_yza4wk ';
 
 class App extends Component{
@@ -16,7 +17,7 @@ class App extends Component{
             videos:[],
             selectedVideo: null
         };
-        this.videoSearch('vevo')
+        this.videoSearch('netmediatama')
     }
 
     videoSearch(term){
@@ -29,7 +30,7 @@ class App extends Component{
     }
 
     render() {
-        const videoSearch = _.debounce((term) => {this.videoSearch(term)}, 300);
+        const videoSearch = _.debounce((term) => {this.videoSearch(term)}, 900);
         return (
             <div>
                 <SearchBar onSearchTermChange={videoSearch} />

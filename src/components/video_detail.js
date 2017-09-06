@@ -10,6 +10,8 @@ const VideoDetail = ({video}) => {
     const videoTitle = video.snippet.title;
     const videoDescription = video.snippet.description;
 
+    console.log(video);
+
     return(
       <div className="video-detail col-md-8">
           <div className="embed-responsive embed-responsive-16by9">

@@ -1,10 +1,14 @@
 .search-bar {
-    margin: 20px;
+    margin: 20px 15px;
     text-align: center;
 }
 
 .search-bar input {
     width: 100%;
+}
+
+.video-item img {
+    max-width: 64px;
 }
 
 .video-detail .details {
